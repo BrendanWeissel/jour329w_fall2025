@@ -75,12 +75,6 @@ def main():
     for i, story in enumerate(stories):
         print(f"Processing {i+1}/{len(stories)}: {story['title']}")
         
-        metadata = extract_metadata(story['title'], story['content'], schema_prompt, args.model)
-    # Process each story
-    enhanced_stories = []
-    for i, story in enumerate(stories):
-        print(f"Processing {i+1}/{len(stories)}: {story['title']}")
-        
         metadata = extract_metadata(story['title'], story['summary'], schema_prompt, args.model)
         
         # Add metadata fields as separate columns instead of nested object

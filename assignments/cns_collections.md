@@ -101,6 +101,8 @@ Since the `story_summaries.json` file already had AI-generated summaries, you'll
 - **people**: Array of key people mentioned (names only)
 - **geographic_focus**: Primary location (county, city, region, or "statewide")
 - **key_institutions**: Organizations, agencies, companies involved
+- **sport**: The name of the sport that the story focuses on
+- **Level** The level of compeition the story is focused on (youth, high school, College, Professional)
 
 You should add any other metadata that you think would be useful. Be sure to describe what and why in `notes.md`.
 
