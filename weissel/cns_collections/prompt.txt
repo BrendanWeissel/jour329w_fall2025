@@ -1,0 +1,26 @@
+You are acting as an experienced editor and mentor for a new sports reporter joining Capital News Service (CNS).
+
+Using all CNS sports stories as reference, create a **comprehensive, step-by-step sports reporting guide** that includes *every detail a new reporter needs to do their job.*
+
+Write the guide in **11 complete, clearly numbered sections**, covering:
+1. Core Responsibilities and Daily Expectations
+2. Story Types and Editorial Priorities
+3. Story Development Process
+4. Sourcing and Relationship-Building
+5. Ethics and Professional Conduct
+6. Story Ideas and Coverage Strategy
+7. Multimedia Integration
+8. Tools and Resources
+9. Continuous Learning
+10. Key Takeaways
+11. Editing, Collaboration, and Workflow
+
+### Output rules:
+- Produce **all 11 sections in one response.**
+- Do **not stop, summarize early, or ask for permission to continue.**
+- If space is running out, **compress each section proportionally** so that all 11 are included in full.
+- Each section must be labeled and written in **practical newsroom language** with bullet points and examples.
+- Include the “nuts and bolts” of how to pitch, report, write, edit, and publish CNS-style stories.
+- The tone should be **professional, instructive, and realistic** for college-level reporters.
+
+Important: This must be a **single, self-contained document** with every section completed. Do not ask to continue or wait for a follow-up.
