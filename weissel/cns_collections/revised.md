@@ -29,7 +29,7 @@ Other Attempt:
 
 For this to run I was told I was using too many tokens so I removed the 170 oldest stories. Unfortunately this did not leave me with as my stories as I would like but still had 95 of the newer ones. I should have used semantic search and tried to find the most relevant stories. I could have also tried switching models.
 
- CODE: cat prompt.txt enhanced_beat_stories_trimmed3.json | uv run llm -m claude-3.5-haiku > prototype.md
+ CODE: cat prompt.txt enhanced_beat_stories_trimmed3.json | uv run llm -m claude-sonnet-4-5 > prototype.md
 
 Beat book prompt 1: You are working as an assistant helping a new reporter covering sports for CNS. Given all the sports stories Create a comprehensive guide for the reporter. Include step by step instruction for how this person should do their jobs, story ideas, types of stories to focus on and what stories to avoid.
 
