@@ -1,234 +1,147 @@
-# A Guide to Sports Betting, NIL, and the Business of Sports Journalism
+Draft using the prompt from class
 
-Welcome to the world where sports, money, and media intersect in increasingly complex ways. Based on recent coverage from the Shirley Povich Center for Sports Journalism, this guide will help you navigate two major stories reshaping athletics: the expansion of sports betting into college campuses and the explosion of Name, Image, and Likeness (NIL) rights for high school and college athletes.
+# Name, Image, and Likeness (NIL) in High School Sports: A Guide for Early-Career Journalists
 
-## The Sports Betting Story: Following the Money to Campus
+## Welcome to the New Landscape
 
-### What's Happening
+You're entering coverage of one of the most significant shifts in high school athletics in decades. The expansion of Name, Image, and Likeness (NIL) rights to high school athletes represents uncharted territory where teenage athletes can now profit from their fame, businesses are exploring new marketing opportunities, and state policies vary wildly. This is a story that touches on sports, business, education, law, and equity—and it's still being written.
 
-Sports betting companies have moved aggressively onto college campuses since states began legalizing sports gambling following a 2018 Supreme Court decision. **These aren't just advertising relationships—they're deep partnerships that raise serious questions about exposing young people to gambling.**
+## The Current State of Play
 
-The University of Colorado Boulder's deal with PointsBet, detailed in [this February 2023 investigation](https://cnsmaryland.org/2023/02/27/at-one-school-a-sports-betting-company-aims-its-pitch-at-students/), illustrates the landscape. The school received $1.625 million over five years, and PointsBet's branding appeared at events where students under 21—the legal gambling age—were present, including new student orientation and football camps.
+As of 2025, **41 states plus Washington, D.C. allow high school athletes to earn money through NIL deals**, a dramatic expansion from just a few years ago when this was virtually unheard of. California's Fair Pay to Play Act kicked off this movement, initially focused on college athletes, but the wave has now reached high schools nationwide.
 
-**Key players to know:**
-- **Richard Karcher** (Eastern Michigan University law professor): A critic who argues the intent of marketing doesn't matter—if it reaches students, that's the effect
-- **Keith Whyte** (National Council on Problem Gambling): Warns that university endorsement gives gambling "imprimatur" that increases student risk
-- **Eric Foote** (PointsBet's former chief strategy officer): Claimed marketing targeted alumni, not students
+The landscape is fragmented by design. Each state sets its own rules. Some require reporting and education; others don't. Most prohibit athletes from mentioning their schools or wearing team uniforms in endorsements. Products like alcohol, tobacco, and gambling are universally off-limits. But beyond these basics, it's a patchwork.
 
-### The Marketing Strategy
+**Key source to bookmark**: The Shirley Povich Center for Sports Journalism conducted a four-month investigation into this topic (https://cnsmaryland.org/2025/05/06/high-school-sports-and-nil-an-explainer/), providing crucial context for understanding how NIL is reshaping high school athletics.
 
-Sports betting companies use sophisticated social media strategies on platforms like TikTok and Instagram to reach Gen Z audiences. As documented in [this analysis of PointsBet's social media](https://cnsmaryland.org/2023/02/27/buzzy-sports-betting-posts-appeal-to-gen-z-social-media-audience/), they employ:
+## The Players and Institutions
 
-- Meme-based content (think SpongeBob references)
-- Brand ambassadors like former pro golfer Paige Spiranac
-- Pop culture trends and viral sounds
-- Content that rarely discusses the actual betting product
+### Athletes Making Headlines
 
-**Story angles worth exploring:**
+**Alexis Ewing** made history as the first high school athlete in Maryland to sign an NIL deal, partnering with College HUNKS Hauling Junk & Moving while playing volleyball at Bullis School. Her groundbreaking agreement illustrates how local businesses are testing these waters (https://cnsmaryland.org/2025/05/06/for-college-hunks-portland-gear-high-school-athletes-are-star-endorsers/).
 
-1. **Track the university partnerships:** Use public records laws to obtain agreements between betting companies and athletic departments. The documents often specify exactly where signage can appear and what promotional activities are permitted.
+These early adopters are important because they're establishing precedents. Track them down for follow-up stories about how these deals actually played out.
 
-2. **Follow the student impact:** College students are particularly vulnerable to problem gambling. Studies show 75-80% gambled in the previous year even before widespread legal betting. Look for:
-   - Campus counseling services data on gambling-related issues
-   - Student interviews about betting habits and losses
-   - Financial aid offices dealing with gambling-related financial problems
+### The Business Side
 
-3. **The regulatory gap:** Many universities have policies against gambling in dorms but partnerships with betting companies. This contradiction makes for compelling stories.
+Companies like **College HUNKS** and **Portland Gear** are pioneers in this space, signing high school athletes despite the uncertainty. They're valuable sources for understanding the business rationale and what metrics they're using to measure success.
 
-4. **Compare conference approaches:** Different athletic conferences have varying policies. The Big Ten, SEC, and others have taken different stances worth examining.
+### State Athletic Associations
 
-**Caveat:** Some universities may have modified or ended these partnerships since the 2023 reporting. Always check current status before pitching stories based on older coverage.
+These organizations are ground zero for policy decisions. **North Carolina's high school athletic association** stands out as one of the few that has implemented mandatory education programs for athletes and families navigating NIL (https://cnsmaryland.org/2025/05/06/boom-in-nil-opportunities-exposes-need-for-education-for-athletes-and-their-parents/). Most states haven't gone this far, leaving families to figure it out themselves.
 
-## The NIL Revolution: High School Athletes as Brands
+### Youth Sports Organizations
 
-### The Landscape
+Don't forget about younger levels. **Little League Baseball** has notably *not* established clear NIL policies, despite the Little League World Series drawing TV audiences that exceed some major league games (https://cnsmaryland.org/2025/05/06/little-league-world-series-provides-big-stage-for-youth-athletes-but-its-nil-rules-are-murky/). This creates an ongoing tension: kids are getting national exposure but can't capitalize on it without jeopardizing future eligibility.
 
-What started with college athletes earning money from their name, image, and likeness has rapidly expanded to high school sports. **As of May 2025, 41 states plus Washington, D.C. allow high school athletes to profit from NIL deals**, with just nine states holding out.
-
-This represents one of the most significant shifts in amateur sports in a generation, but it's also creating a confusing patchwork of rules and raising questions about equity, transfers, and the commercialization of youth sports.
-
-### The Policy Maze
-
-No two state NIL policies are identical. [This comprehensive analysis](https://cnsmaryland.org/2025/05/06/navigating-nil-a-patchwork-of-policies-governing-high-school-athletes/) reveals critical differences:
-
-**Common prohibitions across most states:**
-- Using school logos, uniforms, or intellectual property
-- Filming promotional content on school property
-- Endorsing tobacco, alcohol, cannabis, gambling, weapons
-- Receiving performance-based bonuses
-- Signing professional contracts while maintaining eligibility
-
-**Key variations by state:**
-
-| State | Reporting Requirement | Deadline | Parent/Guardian Involvement |
-|-------|---------------------|----------|----------------------------|
-| Georgia | Must notify principal/AD | 7 days | Required for minors |
-| Arizona | Must notify AD | 5 school days | Not specified |
-| Pennsylvania | Must notify in writing | 72 hours | Required for minors |
-| Virginia | Written notification required | 72 hours | Required for minors |
-| Delaware | Must notify | 72 hours | Required for minors |
-
-**Notable outliers:**
-- California, Florida, New York: No mandatory notification to administrators
-- Maryland, Vermont, North Carolina, Massachusetts: Allow NFT promotions
-- New Jersey: Prohibits athletes from running sports camps for profit
-- Six states created exceptions allowing Olympic athletes to accept USOC Operation Gold funds
-
-### The Money and the Deals
-
-While most high school NIL deals are modest, elite athletes are securing significant contracts:
-
-- **Bronny James** (son of LeBron): Multi-million dollar Nike deal while at Sierra Canyon High School
-- **Cameron Boozer** (son of former NBA All-Star Carlos): $1.6 million NIL valuation
-- **Julian "JuJu" Lewis**: Trading card deal with Leaf Trading Cards
-
-**College HUNKS Hauling Junk & Moving** made headlines with one of Maryland's first high school NIL deals, signing volleyball star Alexis "Lexi" Ewing from Bullis School. [As detailed here](https://cnsmaryland.org/2025/05/06/for-college-hunks-portland-gear-high-school-athletes-are-star-endorsers/), the company's founders saw it as a cost-effective marketing opportunity that generated local TV coverage and newspaper articles.
-
-**Leaf Trading Cards** has deals with 50-60 high school athletes, primarily focusing on elite quarterbacks before they become national stars. President Josh Pankow told reporters: "NIL really became an opportunity to go after some of these kids before they were huge stars, so that we could build relationships with them."
-
-### The Education Gap
-
-Here's a critical reporting angle: **Most high school athletes and their parents don't understand NIL rules.** 
-
-According to Bill Carter of Student-Athlete Insights (and a Povich Center advisory board member), "The only thing any high school student-athlete knows about NIL is that it's permitted or prohibited. There's no infrastructure, no NIL marketplace, nobody educating them about what the opportunities are or how to participate."
-
-Only **North Carolina requires mandatory NIL education** through NFHS Learning Center videos. A few other states offer optional resources:
-- Virginia: Purchased video course from Student-Athlete Insights
-- Colorado: Receives advisory support from Triple Threat Leadership
-- Louisiana: Requires administrators (not athletes) to take courses
-- Delaware: Maintains FAQ page, discussing virtual town halls
-
-**Story opportunity:** The lack of education creates vulnerability. Young athletes could:
-- Inadvertently violate rules and lose eligibility
-- Sign exploitative contracts without legal review
-- Face unexpected tax liabilities
-- Damage future college prospects
+## Critical Issues and Tensions
 
 ### The Transfer Question
 
-One of the most contentious unresolved issues is whether NIL is driving transfers between high schools. 
+One of the murkiest and most important areas: **Are NIL deals influencing where high school athletes choose to play?** The story about a star basketball player moving from one school to DeMatha Catholic in Washington, D.C. raised this question explicitly, though no direct links have been established (https://cnsmaryland.org/2025/05/06/impact-of-nil-on-transfers-is-unknown-but-raises-questions-for-high-school-officials/).
 
-[This reporting from the Washington D.C. area](https://cnsmaryland.org/2025/05/06/impact-of-nil-on-transfers-is-unknown-but-raises-questions-for-high-school-officials/) details how a star basketball player left DeMatha Catholic High School for rival St. Paul VI Catholic after summer league. While no one could prove NIL was a factor, it raised suspicions.
+This is unresolved territory. High school officials are concerned, but hard evidence is scarce. **Story angle**: Work sources at competitive high schools to track transfer patterns and try to establish whether NIL is becoming a recruiting tool. Look for:
+- Schools in states with more permissive NIL rules
+- Athletes with significant social media followings
+- Patterns in recruiting pitches from private schools with wealthy booster networks
 
-**Key voices:**
-- **Dan McMahon** (DeMatha principal for 25 years): "A lot of this is hearsay but … it is changing the way that people get recruited."
-- **Dwayne Foster** (Washington Catholic Athletic Conference commissioner): "We don't chase ghosts in that space" regarding investigating potential NIL-driven transfers.
+### The Education Gap
 
-**The state divide:** Alabama doesn't allow high school NIL while neighboring Georgia does, raising concerns about athletes crossing state lines. State Rep. Jeremy Gray (Alabama) noted three recent transfers to states allowing NIL, though causation remains unclear.
+Only a handful of states require education about NIL for athletes and parents. This creates enormous disparities in who understands contracts, tax implications, and long-term consequences. In most places, families are navigating complex legal and financial waters without guidance (https://cnsmaryland.org/2025/05/06/boom-in-nil-opportunities-exposes-need-for-education-for-athletes-and-their-parents/).
 
-**Caveat:** This is an evolving story. Policies in North Carolina changed via court ruling in October 2024, allowing public school athletes to participate in NIL for the first time. Always verify current policies before reporting.
+**Story sources for this angle**:
+- Sports attorneys specializing in youth contracts
+- Tax professionals in your area
+- Parents who've been through the process (both successfully and unsuccessfully)
+- High school athletic directors dealing with the fallout
 
-### Demographics and Attitudes
+### Race and Opportunity
 
-A 2023 national poll by the Povich Center, Washington Post, and UMD's Center for Democracy and Civic Engagement revealed significant demographic divides:
+The data from the Povich Center's national poll is striking: **Black and Hispanic parents are nearly twice as likely as white parents to view youth sports as a path to college scholarships and professional careers**. This perspective shapes how different communities view NIL opportunities (https://cnsmaryland.org/2024/02/05/poll-black-hispanic-parents-nearly-twice-as-likely-as-white-parents-to-see-youth-football-as-a-path-to-college-scholarships-nfl/).
 
-**Support for high school NIL:** 54% overall
-- Black parents: 74%
-- Hispanic parents: 73%
-- White parents: Lower support (specific percentage not provided)
+This isn't just about NIL—it's about structural inequality and opportunity. In communities with fewer economic opportunities, athletic success represents hope. NIL adds a new dimension to this dynamic.
 
-**Seeing NIL as path to scholarships/pros:**
-- 43% of Black parents see scholarships as a benefit (vs. 23% white parents)
-- 35% of Black parents see pro careers as a benefit (vs. 13% white parents)
-- 42% of Hispanic parents see scholarships as a benefit
-
-**Critical insight:** According to sports economist Andy Schwarz, co-sponsor of California's Fair Pay to Play Act, opposition to NIL may reflect broader societal biases: "If a particular financial benefit feels like it goes disproportionately to minorities, we're oddly against it in America."
-
-## Key Institutions and Organizations to Monitor
-
-### Sports Betting Landscape:
-- **Major operators:** PointsBet, FanDuel, DraftKings
-- **College partnerships:** Track deals through schools' athletic marketing arms (like Buffalo Sports Properties at CU Boulder)
-- **Regulatory bodies:** State gaming commissions, NCAA
-
-### NIL Ecosystem:
-- **National Federation of State High School Associations (NFHS):** Sets guidelines but doesn't mandate policies
-- **State athletic associations:** All 50 have independent policies
-- **Education providers:** Student-Athlete Insights, Triple Threat Leadership, Eccker Sports Group
-- **Companies doing deals:** Nike, Adidas, Leaf Trading Cards, College HUNKS, Portland Gear
+**Reporting consideration**: Approach these stories with nuance. The financial upside is real for some athletes, but so are the risks of exploitation and distraction from education.
 
 ## Undercovered Angles and Story Ideas
 
-### Sports Betting:
+### 1. The Failed Deal Story
+We've seen the success stories. Where are the athletes who signed deals that fell through? What happened to the money they thought they'd earn? What did they learn?
 
-1. **The prevention programs gap:** Universities partner with betting companies but what prevention education exists? Interview campus counseling centers, student health services.
+**Potential sources**:
+- Local sports agents or attorneys who've seen deals collapse
+- Athletic directors who've dealt with disappointed families
+- Business owners who backed out of agreements
 
-2. **Faculty and staff perspective:** How do professors and advisors view these partnerships? Are there faculty senate discussions or votes?
+### 2. The State Policy Laboratory
+With 41 states taking different approaches, we have a natural experiment happening. Which state policies are working best? Which are creating problems?
 
-3. **The competitive disadvantage:** Schools without betting partnerships—do they lose recruiting advantages or revenue?
+**Research approach**:
+- Compare states with mandatory education vs. those without
+- Track reporting requirements and compliance rates
+- Interview athletic directors from neighboring states with different rules
 
-4. **Problem gambling on campus:** Work with counseling centers to document (anonymously) the rise in gambling-related issues. FOIA campus police reports for gambling-related incidents.
+### 3. The Social Media Influencer Athlete
+Some high school athletes have enormous social media followings. How are they monetizing? What platforms? What's the relationship between athletic performance and online popularity?
 
-5. **The post-graduation impact:** Track alumni who developed gambling problems during college years when betting was normalized through university partnerships.
+**Story locations**:
+- High schools with nationally ranked programs
+- Areas with strong youth sports influencer culture
+- Platform-specific: TikTok and Instagram are where young athletes build brands
 
-6. **State-by-state regulatory comparison:** States have varying levels of oversight. Compare approaches and outcomes.
+### 4. The Gender Gap in NIL
+Are male athletes getting more opportunities than female athletes? The Alexis Ewing story (volleyball) is notable partly because it features a female athlete, but is this the exception?
 
-### NIL:
+**Sources to develop**:
+- Female athletes and their families
+- Coaches of girls' sports programs
+- Marketing professionals who might explain why businesses choose certain athletes
 
-1. **The gender divide:** Are boys getting more NIL opportunities than girls? Compare deals by sport and gender. The original sports betting reporting noted concerns about football dominating—is this happening with NIL?
+### 5. The Middle School Underground
+(Caveat: This may already be resolved or policy may have changed) Some reporting suggests middle school athletes are in a gray area. Are any accepting deals in states where the law technically allows it? Are schools creating their own prohibitions?
 
-2. **The coaching conundrum:** Coaches can't be involved in NIL deals, but parents navigate complex contracts. Interview parents who've gone through this without legal help.
+### 6. The Tax Trap
+Teenage athletes making money need to understand taxes. Are they setting aside funds for tax payments? Do they understand 1099 income? This could be a disaster waiting to happen.
 
-3. **The tax consequences:** Most teens don't file taxes. What happens when they need to report NIL income? Find families who've dealt with surprise tax bills.
+**Expert sources**:
+- CPAs specializing in athlete taxation
+- Financial advisors working with young athletes
+- State tax authorities
 
-4. **Rural vs. urban disparity:** Athletes in major metros have more opportunities. Document the geographic divide with specific examples.
+### 7. The College Recruiting Impact
+Are college coaches factoring high school NIL success into recruiting? Does it signal marketability? Or does it raise red flags about motivation?
 
-5. **The Little League question:** With [Little League World Series games attracting 3.5 million viewers](https://cnsmaryland.org/2025/05/06/little-league-world-series-provides-big-stage-for-youth-athletes-but-its-nil-rules-are-murky/)—more than some MLB games—should 12-year-olds be able to do NIL? Little League's policy remains murky.
+**Sources**:
+- College coaches (off the record if necessary)
+- Recruiting analysts
+- High school athletes who've been through recruiting process
 
-6. **The education void:** Shadow a family trying to learn NIL rules. Document the confusion and potential for mistakes.
+## Important Caveats
 
-7. **The compliance challenge:** Schools say NIL isn't their responsibility, but they enforce eligibility. How do athletic directors verify compliance without resources?
+Many stories in this space involve **ongoing policy debates** that may have been resolved by the time you read this. The Little League NIL policy question, for instance, might have been clarified. Before pursuing a story based on older reporting, verify the current status.
 
-8. **The collective concern:** Collectives aren't allowed at the high school level, but are they operating underground? Investigate whispers in competitive conferences.
+Similarly, the specific state count (41 states plus D.C.) will likely change. Always check current state athletic association policies before writing.
 
-9. **The holdout states:** Texas has 850,000+ high school athletes and no NIL. Michigan has pending legislation. Track the political dynamics in these states.
+## Building Your Source Network
 
-10. **Long-term outcomes:** The first high school NIL deals were in 2021-2022. Track those athletes now—how did NIL affect their college recruitment, financial literacy, life decisions?
+### Essential contacts to develop:
+- Your state's high school athletic association media person
+- A local sports attorney who handles youth contracts
+- Athletic directors at both public and private high schools
+- Parents who've navigated NIL deals (start with the successful ones, then find the cautionary tales)
+- Local business owners who might be interested in athlete endorsements
+- College compliance officers (they worry about high school NIL affecting recruiting)
 
-### Investigative Deep Dives:
+### Organizations to monitor:
+- National Federation of State High School Associations (NFHS)
+- Your state's high school athletic association
+- Local sports marketing agencies
+- Youth sports advocacy groups
 
-1. **Cross-reference transfer data with NIL adoption:** Use state athletic association data to see if transfers increased when NIL was adopted.
+## The Bigger Picture
 
-2. **Follow the money in private schools:** Public schools have FOIA—private schools don't. But many private schools dominate recruiting. How do their NIL ecosystems work?
+NIL in high school sports sits at the intersection of several larger stories: the commercialization of youth sports, inequality in educational opportunity, the changing nature of amateur athletics, and the influencer economy. The best NIL stories connect individual experiences to these broader themes.
 
-3. **The recruiting service angle:** Services like 247Sports now include NIL valuations. How accurate are these? Who benefits from inflated valuations?
+Remember that behind every statistic and policy debate are teenagers trying to navigate complex adult systems while playing sports they love. That human element—the 16-year-old signing a contract they may not fully understand, the parent hoping this opportunity changes their family's trajectory, the coach worried about team chemistry when one player has a deal—is what makes these stories resonate.
 
-4. **The lawyer perspective:** Find attorneys who've represented high school athletes in NIL deals. What red flags do they see in contracts?
-
-## Research and Reporting Tips
-
-**For sports betting stories:**
-- Use state open records laws to obtain university contracts with betting companies
-- FOIA campus police for gambling-related incidents
-- Request data from university counseling centers on problem gambling (aggregate data may be available)
-- Check FanDuel, DraftKings, PointsBet quarterly earnings calls for mentions of college partnerships
-- Track social media campaigns through CrowdTangle or similar tools
-
-**For NIL stories:**
-- Each state athletic association has a handbook online—download them all
-- Create a spreadsheet comparing state policies across key variables
-- Use On3.com and other recruiting services to track NIL valuations
-- LinkedIn is valuable for finding NIL consultants and company representatives
-- High school athletic directors are often willing to talk on background
-- Parent Facebook groups for competitive sports teams can be goldmines of information
-
-**Key sources to develop:**
-- **Bill Carter** (Student-Athlete Insights): Leading expert on high school NIL, Povich Center advisory board member
-- **Keith Whyte** (National Council on Problem Gambling): Articulate voice on gambling risks
-- **Sports economists** like Andy Schwarz: Provide broader context on athlete compensation
-- **Athletic directors at schools with NIL deals:** They're navigating this in real time
-- **State legislators:** Many states have active NIL legislation
-
-## The Bottom Line
-
-These stories intersect at a crucial point: **they're both about money flowing to younger and younger athletes, with inadequate oversight and unclear long-term consequences.** 
-
-The sports betting story is fundamentally about whether universities should partner with companies marketing a product to students who are statistically vulnerable to addiction and financial problems.
-
-The NIL story is about whether high school (and younger) athletes should be able to profit from their talents and fame, but also about equity, education, exploitation, and the changing nature of amateur sports.
-
-Both stories are far from resolved. Court cases are pending. Policies are evolving. The impact won't be clear for years. That makes this an ideal time for enterprising journalists to dig in, establish expertise, and produce work that will influence policy and public understanding.
-
-**The most important advice:** Don't treat these as sports stories alone. They're business stories, education stories, legal stories, and ultimately stories about how society views young people, opportunity, and the role of money in activities we once considered purely amateur.
-
-The athletes at the center of these stories—whether they're being marketed to by betting companies or navigating NIL contracts—deserve journalism that's skeptical, thorough, and fair. And the public deserves to understand how rapidly the landscape of youth and college sports is changing.
+Keep your eye on the rapidly evolving state-by-state differences, the unintended consequences (especially around transfers and recruiting), and the equity issues that emerge when opportunities aren't distributed evenly. This story is just beginning.
