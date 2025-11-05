@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# minimal mock llm: args: -m model prompt
+model="$2"
+prompt="$3"
+prompt_lc=$(printf "%s" "$prompt" | tr '[:upper:]' '[:lower:]')
+if printf "%s" "$prompt_lc" | grep -q -E 'school|education|teacher|student'; then
+  echo "Education"
+elif printf "%s" "$prompt_lc" | grep -q -E 'court|police|arrest|crime|charged'; then
+  echo "Public Safety"
+elif printf "%s" "$prompt_lc" | grep -q -E 'city|county|council|mayor|commission|zoning|planning'; then
+  echo "Local Government"
+elif printf "%s" "$prompt_lc" | grep -q -E 'farm|agriculture|crop|farming|harvest'; then
+  echo "Agriculture"
+elif printf "%s" "$prompt_lc" | grep -q -E 'sport|game|tournament|coach|season|team'; then
+  echo "Sports"
+else
+  echo "Other"
+fi
