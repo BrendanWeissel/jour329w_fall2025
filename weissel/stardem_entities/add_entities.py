@@ -44,6 +44,7 @@ def main():
     parser = argparse.ArgumentParser(description='Add metadata to CNS beat stories using LLM')
     parser.add_argument('--model', required=True, help='LLM model to use (e.g., gpt-4o-mini, claude-3.5-haiku)')
     parser.add_argument('--input', default='story_summaries_elections.json', help='Input JSON file with stories')
+    parser.add_argument('--sports-json', help='Optional path to a sports JSON file whose metadata should be merged into matching stories')
 
     # Show help if no arguments provided
     if len(sys.argv) == 1:
@@ -51,6 +52,38 @@ def main():
         return
 
     args = parser.parse_args()
+
+    # If a sports json is supplied, try to load it and build an index for quick lookup
+    sports_index = {}
+    if args.sports_json:
+        sports_path = Path(args.sports_json)
+        if sports_path.exists():
+            try:
+                with open(sports_path) as sf:
+                    sports_data = json.load(sf)
+                # sports_data likely a list of objects; create simple lookup by id or title
+                if isinstance(sports_data, list):
+                    for item in sports_data:
+                        # prefer explicit id keys
+                        sid = None
+                        for candidate in ('id', 'story_id', 'article_id'):
+                            if isinstance(item, dict) and candidate in item:
+                                sid = str(item[candidate])
+                                break
+                        if sid:
+                            sports_index[('id', sid)] = item
+                        # also index by title if present
+                        title = item.get('title') if isinstance(item, dict) else None
+                        if title:
+                            sports_index[('title', str(title).strip().lower())] = item
+                elif isinstance(sports_data, dict):
+                    # If the file is an object keyed by id or title, just store it
+                    for k, v in sports_data.items():
+                        sports_index[('id', str(k))] = v
+            except Exception as e:
+                print(f"Warning: failed to load sports json '{args.sports_json}': {e}")
+        else:
+            print(f"Warning: sports json path '{args.sports_json}' does not exist; continuing without sports metadata")
 
     # Define your schema prompt based on your beat - CUSTOMIZE THIS!
     # Make keys lowercase, use underscores and provide example values so the LLM
@@ -60,26 +93,44 @@ def main():
     # and short name tokens. The LLM should return JSON like the example.
     schema_prompt = """
         {
-            "people": ["First Last", "Another Person"],
-            "places": ["Town, State", "Organization Location"],
-            "organizations": ["Organization Name", "Agency"]
+            "sport": "football",                       # single-word sport name (string)
+            "story_type": "game recap",                # e.g., "game recap", "feature", "preview" (string)
+            "location": "Easton, Maryland",            # city, state or short location string (string)
+            "teams": ["Patriots", "Red Sox"],        # list of team names mentioned (array)
+            "schools": ["Newton South High School"],  # list of school names when relevant (array)
+            "people": ["Tom Brady"],                  # list of important people (array)
+            "quoted_people": ["Coach John Smith"],    # list of all people who are quoted directly or paraphrased in the story (array)
+            "level_of_play": "high school",           # e.g., "high school", "college", "professional" (string)
+            "competition_type": "regular season",    # e.g., "regular season", "playoffs", "tournament" (string)
+            "venue": "War Memorial Stadium",          # stadium/venue name (string)
+            "outcome": "Easton 28, Cambridge 14",    # game score or outcome; if not a game, short outcome like "win","loss","tie" (string)
+            "importance": 7,                            # numeric importance on a 1-10 scale (integer)
+            "audience_blurb": "A brief 1-2 sentence blurb describing the most likely target audience for this story." # short textual blurb
         }
 
-        IMPORTANT: For `people` return ONLY very important people — the primary
-        named sources, elected officials, victims/defendants, key witnesses, or the
-        main subjects of the story. Do NOT include the author/byline, long rosters,
-        or passing mentions. Keep the people list focused and short.
-
-        For `places` return the most relevant place names (town, county, or
-        location) and LIMIT the array to at most 3 items (most relevant first).
-
-        For `organizations` include organizations directly relevant to the story.
-
-        Example (desired output for a short story):
+        IMPORTANT: Use the exact lowercase keys shown above with underscores (e.g., `level_of_play`).
+        - Return JSON using these keys. For list fields (teams, schools, people, quoted_people) return an array; for single-valued fields return a string or integer as appropriate.
+        - `importance` should be an integer between 1 and 10 (1 = minor/preseason, 10 = championship/major).
+        - `quoted_people` must include all named people who are quoted in the story, whether a direct quote ("...") or a paraphrase attributed to a named source. Include role/title if available (e.g., "Coach John Smith").
+        - `audience_blurb` should be a concise 1-2 sentence description of the story's most likely target audience (e.g., "Local high-school sports fans and families; readers interested in Easton High athletics").
+        - If a value is not available, return an empty array for list fields, an empty string for textual fields, and 0 for numeric fields if unknown.
+        - For `people`, include only the most important named individuals (primary sources, coaches, star players). Do NOT include the author/byline.
+        - Keep arrays short (top 3-5 most relevant people/teams) and use consistent naming across stories.
+        Example desired output for a short sports story:
         {
-            "people": ["Mayor Jane Doe", "John Smith"],
-            "places": ["Easton, MD", "Queen Anne's County"],
-            "organizations": ["Star Democrat", "Queen Anne's County Commissioners"]
+            "sport": "football",
+            "story_type": "game recap",
+            "location": "Easton, Maryland",
+            "teams": ["Easton High School", "Cambridge High School"],
+            "schools": ["Easton High School", "Cambridge High School"],
+            "people": ["Coach John Smith", "Quarterback Joe Jones"],
+            "quoted_people": ["Coach John Smith", "Quarterback Joe Jones"],
+            "level_of_play": "high school",
+            "competition_type": "regular season",
+            "venue": "War Memorial Stadium",
+            "outcome": "Easton 28, Cambridge 14",
+            "importance": 8,
+            "audience_blurb": "Local high-school sports fans and families; readers interested in Easton High athletics."
         }
         """
 
@@ -193,17 +244,94 @@ def main():
                             seen.add(k); places_ordered.append(k)
                     val = places_ordered[:3]
 
-                # write out as JSON string in the story record
-                enhanced_story[f'entities_{key}'] = json.dumps(val)
+                # write out as JSON string in the story record, but skip empty lists
+                if val:
+                    enhanced_story[f'entities_{key}'] = json.dumps(val)
             # keep any additional fields (optional) as metadata_ prefixed columns
             for key, value in metadata.items():
-                if key not in ('people', 'places', 'organizations'):
-                    norm_key = key.strip().lower().replace(' ', '_').replace('-', '_')
-                    col_name = f'metadata_{norm_key}'
-                    enhanced_story[col_name] = json.dumps(value) if isinstance(value, list) else value
+                if key in ('people', 'places', 'organizations'):
+                    continue
+                # Special handling for quoted_people (store as entities_quoted_people)
+                if key == 'quoted_people':
+                    q = value if isinstance(value, list) else ([v.strip() for v in re.split(r'[;,]\s*', value)] if isinstance(value, str) and value.strip() else [])
+                    # dedupe and keep order
+                    seen_q = set(); q_ordered = []
+                    for name in q:
+                        n = name.strip()
+                        if not n: continue
+                        if n not in seen_q:
+                            seen_q.add(n); q_ordered.append(n)
+                    enhanced_story['entities_quoted_people'] = json.dumps(q_ordered)
+                    continue
+
+                # Special handling for importance (ensure integer 1-10)
+                if key == 'importance':
+                    imp = None
+                    try:
+                        imp = int(value)
+                    except Exception:
+                        # try to parse from string like "7" or "7/10"
+                        if isinstance(value, str):
+                            m = re.search(r"(\d+)", value)
+                            if m:
+                                imp = int(m.group(1))
+                    if imp is None:
+                        imp = 0
+                    # clamp to 1-10 if in range, else leave as 0
+                    if imp < 1 or imp > 10:
+                        # allow 0 as unknown
+                        pass
+                    enhanced_story['metadata_importance'] = imp
+                    continue
+
+                # Special handling for audience blurb: store and also append to content preview
+                if key in ('audience_blurb', 'target_audience'):
+                    blurb = value if isinstance(value, str) else ''
+                    enhanced_story['metadata_audience_blurb'] = blurb
+                    # also add a content copy with the audience blurb appended for quick viewing
+                    try:
+                        base = story.get('content') or story.get('summary') or ''
+                        if blurb and base:
+                            enhanced_story['content_with_audience_blurb'] = base + "\n\nAudience: " + blurb
+                        else:
+                            enhanced_story['content_with_audience_blurb'] = base
+                    except Exception:
+                        enhanced_story['content_with_audience_blurb'] = story.get('content') or story.get('summary') or ''
+                    continue
+
+                norm_key = key.strip().lower().replace(' ', '_').replace('-', '_')
+                col_name = f'metadata_{norm_key}'
+                enhanced_story[col_name] = json.dumps(value) if isinstance(value, list) else value
         else:
             # If there was an error, add error information
             enhanced_story['metadata_error'] = (metadata.get('error') if isinstance(metadata, dict) else str(metadata)) or 'Unknown error'
+
+        # If we have sports metadata loaded, try to match and merge it into the story
+        if sports_index:
+            matched = None
+            # match by id if present
+            sid = story.get('id') or story.get('story_id') or story.get('article_id')
+            if sid and ('id', str(sid)) in sports_index:
+                matched = sports_index[('id', str(sid))]
+            # match by title (case-insensitive exact)
+            if not matched:
+                title_key = (story.get('title') or '').strip().lower()
+                if title_key and ('title', title_key) in sports_index:
+                    matched = sports_index[('title', title_key)]
+            # fallback: substring match on titles
+            if not matched:
+                stitle = (story.get('title') or '').strip().lower()
+                if stitle:
+                    for (kind, key), item in sports_index.items():
+                        if kind == 'title' and key in stitle:
+                            matched = item
+                            break
+
+            if matched:
+                # merge sports metadata into story with sports_ prefix
+                for k, v in (matched.items() if isinstance(matched, dict) else []):
+                    col = f'sports_{str(k).strip().lower().replace(" ", "_")}'
+                    enhanced_story[col] = json.dumps(v) if isinstance(v, (list, dict)) else v
 
         enhanced_stories.append(enhanced_story)
 
