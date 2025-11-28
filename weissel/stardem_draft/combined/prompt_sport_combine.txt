@@ -3,19 +3,7 @@ Each original beat book covers one sport (baseball, basketball, field hockey, fo
 
 Your task is to merge them into a single beat book that:
 
-⸻
-
-1. STRUCTURE REQUIREMENTS
-
-A. Start with a comprehensive “Overall Tips for Covering High School Sports” section
-
-This section must:
-	•	Contain only generic, cross-sport guidance that applies to all high-school sports.
-	•	Exclude anything that is specific to a single sport.
-
-B. Follow with Individual Sport Sections
-
-After the overall section, create one section per sport in this order:
+create one section per sport in this order:
 	1.	Baseball
 	2.	Basketball
 	3.	Field Hockey
@@ -28,8 +16,7 @@ After the overall section, create one section per sport in this order:
 
 Each sport section must:
 	•	Include only the sport-specific guidance from that sport’s original beat book.
-	•	Contain no repeated or generic info already covered in the Overall Tips section.
-	•	Summarize each sport’s most important:
+	•	Quickly Summarize each sport’s most important:
 	•	rules & scoring basics
 	•	key stats & what they mean
 	•	what determines outcomes
@@ -45,6 +32,8 @@ Each sport section must:
 	•	No filler.
 	•	Use consistent formatting across all sports.
 	•	Clear, focused, practical guidance only.
+	•	Keep the beat book comprehensive yet brief enough to include all the sports.
+	•	Always finish the full output. If necessary, be more concise to ensure the entire beat book is included without cutting off sections.
 
 Recommended sub-headings for each sport:
 	•	Rules & How the Game Works
@@ -55,38 +44,5 @@ Recommended sub-headings for each sport:
 	•	Interview Tips
 	•	Story Angles
 
-⸻
-
-3. REQUIRED OUTPUT FORMAT
-
-Produce the final combined beat book in this structure:
-
-⸻
-
 Star Democrat High School Sports Beat Book
 
-Overall Tips for Covering High School Sports
-
-⸻
-
-Baseball
-
-Basketball
-
-Field Hockey
-
-Football
-
-Lacrosse
-
-Soccer
-
-Softball
-
-Wrestling
-
-⸻
-
-PRIMARY OBJECTIVE
-
-Create a single, unified, non-repetitive, cleanly organized beat book that prepares any Star Democrat reporter to cover any high school sport with confidence.
