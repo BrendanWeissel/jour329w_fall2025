@@ -1,0 +1,81 @@
+You are merging individual high-school sports beat books into one unified Star Democrat beat book. Each original beat book covers one sport.
+
+Your task is to create a clean, non-repetitive, Eastern Shore–specific backgrounder that focuses on the sports, teams, rivalries, and conferences the Star Democrat actually covers — not general sports-reporting advice or broad sports rules.
+DO NOT MAKE UP ANY INFORMATION. PRIOTIZE ACCURACY OVER LENGTH. ONLY WRITE THINGS YOU KNOW TO BE TRUE
+⸻
+
+1. STRUCTURE
+
+A. Section 1 — Eastern Shore High School Sports Overview
+
+This section should function as a regional primer, not a how-to guide.
+
+Include ONLY information tied to the Star Democrat coverage area:
+	•	Conferences & alignment: Bayside Conference structure, North/South divisions, power programs, typical playoff paths, state classifications.
+	•	Geography: Talbot, Caroline, Dorchester, Queen Anne’s, (and nearby opponents), long travel distances, rural rivalries, scheduling quirks.
+	•	Historic rivalries: The history of them, why they matter and notable moments from them
+	•	Marquee annual games: Thanksgiving rivalry games, conference championships, tournament traditions.
+	•	Identity of the region: multi-sport athletes, generational families, long-tenured coaches, small-town crowds, Friday-night culture.
+	•	Recurring themes in Star Democrat coverage: program rebuilds, playoff droughts, breakout freshmen, county bragging rights, etc.
+
+Exclude:
+	•	Generic “how to cover sports” instructions.
+	•	Basic rules or definitions.
+	•	Anything applicable outside the Eastern Shore.
+
+⸻
+
+B. Section 2 — Individual Sport Sections
+
+Create one section per sport, in this order:
+	1.	Baseball
+	2.	Basketball
+	3.	Field Hockey
+	4.	Football
+	5.	Lacrosse
+	6.	Soccer
+	7.	Softball
+	8.	Wrestling
+	9.	Any additional sports provided
+
+For each sport:
+	•	Use only sport-specific Eastern Shore content from the original beat books.
+	•	Remove anything general (e.g., basic rules, universal stats) unless it’s necessary for context.
+	•	Add region-specific insights:
+	•	Which BaySide programs dominate this sport.
+	•	Notable rivalries unique to that sport.
+	•	Typical style of play for Shore programs (e.g., run-heavy football, possession soccer).
+	•	Stories the Star Democrat has historically covered: playoff runs, star athletes, coaching legacies.
+	•	Context from real examples drawn from past Star Democrat stories when relevant.
+
+Use these sub-headings:
+	•	Rules & How the Game Works
+(Only include rules nuances relevant to the Eastern Shore — e.g., mercy rules, pitch-count limits, conference tiebreakers.)
+	•	Key Stats & What They Mean
+	•	What Decides Games on the Eastern Shore
+(Weather, field conditions, style tendencies, conference strengths, etc.)
+	•	Positions & Terminology
+(Sport-specific, concise.)
+	•	What to Watch For
+(Local tendencies, signature plays/formations, coaching trademarks.)
+	•	Interview Tips
+(Coach-specific angles, rivalry framing, postseason stakes.)
+	•	Story Angles
+(Tie directly to past Shore examples and typical Star Democrat reporting patterns.)
+
+⸻
+
+2. CONTENT RULES
+	•	Prioritize regional specifics over general sports knowledge.
+	•	No boilerplate.
+	•	No repeated material across sports.
+	•	Format consistently.
+	•	Expand beyond the initial 42 stories by processing additional batches (Groq) to extract:
+	•	Rivalry histories
+	•	Past playoff results
+	•	Recurrent themes in previous coverage
+	•	Every detail should make a reporter sound informed about Eastern Shore sports, not sports in general.
+
+	PRIMARY OBJECTIVE
+
+Produce a region-driven, non-generic backgrounder that clearly reflects what makes the Eastern Shore high school sports scene distinct — its rivalries, conferences, histories, coaches, community dynamics, and the on-field tendencies that define local competition.
