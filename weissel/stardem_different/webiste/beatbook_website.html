@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eastern Shore Sports Beat Book</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .intro {
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 3px solid #e9ecef;
+        }
+        
+        .intro h2 {
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+        
+        .intro p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .sports-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 3px solid #e9ecef;
+        }
+        
+        .nav-button {
+            padding: 15px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .sport-section {
+            margin-bottom: 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .sport-section:hover {
+            border-color: #667eea;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
+        }
+        
+        .sport-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 25px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: all 0.3s ease;
+        }
+        
+        .sport-header:hover {
+            background: linear-gradient(135deg, #5568d3 0%, #653991 100%);
+        }
+        
+        .sport-header h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+        
+        .toggle-icon {
+            font-size: 1.5em;
+            transition: transform 0.3s ease;
+        }
+        
+        .sport-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            background: white;
+        }
+        
+        .sport-content.active {
+            max-height: 10000px;
+        }
+        
+        .sport-content-inner {
+            padding: 30px;
+        }
+        
+        .sport-content h3 {
+            color: #1e3c72;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+        
+        .sport-content h4 {
+            color: #2a5298;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .sport-content p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        .sport-content ul, .sport-content ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .sport-content li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .sport-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .sport-content table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .sport-content table td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .sport-content table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .sport-content table tr:hover {
+            background: #e9ecef;
+        }
+        
+        .sport-content code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+        
+        .sport-content pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        .sport-content blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #666;
+            font-style: italic;
+        }
+        
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .sports-nav {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 10px;
+            }
+            
+            .sport-header h2 {
+                font-size: 1.4em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📰 Eastern Shore Sports Beat Book</h1>
+            <p>A Comprehensive Guide for Star Democrat Sports Reporters</p>
+        </header>
+        
+        <div class="intro">
+            <h2>Welcome to Your Beat</h2>
+            <p>This interactive guide is your go-to resource for covering high school and community sports on Maryland's Eastern Shore. Click any sport below to explore detailed coverage guidelines, story ideas, and reporting strategies.</p>
+            <p><strong>Tip:</strong> Use the quick navigation buttons to jump to a specific sport, or scroll down to browse all sections.</p>
+        </div>
+        
+        <div class="sports-nav">
+            <button class="nav-button" onclick="scrollToSport('baseball')">Baseball</button>
+            <button class="nav-button" onclick="scrollToSport('basketball')">Basketball</button>
+            <button class="nav-button" onclick="scrollToSport('field-hockey')">Field Hockey</button>
+            <button class="nav-button" onclick="scrollToSport('football')">Football</button>
+            <button class="nav-button" onclick="scrollToSport('lacrosse')">Lacrosse</button>
+            <button class="nav-button" onclick="scrollToSport('soccer')">Soccer</button>
+            <button class="nav-button" onclick="scrollToSport('softball')">Softball</button>
+            <button class="nav-button" onclick="scrollToSport('wrestling')">Wrestling</button>
+        </div>
+        
+        <div class="content">
+            
+        <div class="sport-section" id="baseball-section">
+            <div class="sport-header" onclick="toggleSection('baseball')">
+                <h2>Baseball</h2>
+                <span class="toggle-icon" id="baseball-icon">▼</span>
+            </div>
+            <div class="sport-content" id="baseball-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="sport-section" id="basketball-section">
+            <div class="sport-header" onclick="toggleSection('basketball')">
+                <h2>Basketball</h2>
+                <span class="toggle-icon" id="basketball-icon">▼</span>
+            </div>
+            <div class="sport-content" id="basketball-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="sport-section" id="field-hockey-section">
+            <div class="sport-header" onclick="toggleSection('field-hockey')">
+                <h2>Field Hockey</h2>
+                <span class="toggle-icon" id="field-hockey-icon">▼</span>
+            </div>
+            <div class="sport-content" id="field-hockey-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="sport-section" id="football-section">
+            <div class="sport-header" onclick="toggleSection('football')">
+                <h2>Football</h2>
+                <span class="toggle-icon" id="football-icon">▼</span>
+            </div>
+            <div class="sport-content" id="football-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="sport-section" id="lacrosse-section">
+            <div class="sport-header" onclick="toggleSection('lacrosse')">
+                <h2>Lacrosse</h2>
+                <span class="toggle-icon" id="lacrosse-icon">▼</span>
+            </div>
+            <div class="sport-content" id="lacrosse-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="sport-section" id="soccer-section">
+            <div class="sport-header" onclick="toggleSection('soccer')">
+                <h2>Soccer</h2>
+                <span class="toggle-icon" id="soccer-icon">▼</span>
+            </div>
+            <div class="sport-content" id="soccer-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="sport-section" id="softball-section">
+            <div class="sport-header" onclick="toggleSection('softball')">
+                <h2>Softball</h2>
+                <span class="toggle-icon" id="softball-icon">▼</span>
+            </div>
+            <div class="sport-content" id="softball-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+
+        <div class="sport-section" id="wrestling-section">
+            <div class="sport-header" onclick="toggleSection('wrestling')">
+                <h2>Wrestling</h2>
+                <span class="toggle-icon" id="wrestling-icon">▼</span>
+            </div>
+            <div class="sport-content" id="wrestling-content">
+                <div class="sport-content-inner">
+                    <p><strong>Eastern Shore High‑School &amp; Community Sports Beat – Wrestling Guide</strong></p>
+<p><em>For the reporter who's just been handed the wrestling beat and wants to hit the ground (and the mat) running.</em></p>
+<hr />
+<h3>1. Local Sports Landscape Overview</h3>
+<h4>What matters most on the Eastern Shore?</h4>
+<table>
+<thead>
+<tr>
+<th>Sport</th>
+<th>Why it's a "big deal"</th>
+<th>Core audience</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Wrestling</strong> (both boys and girls)</td>
+<td>• Long‑standing rivalries – Bayside Conference, 2A‑1A East Region, and the MPSSAA state tournament.<br>• Rapid growth of girls' programs (first state team title in 2024, a historic moment for the region).<br>• Small‑town pride: every town's "Seahawk", "Lions", "Buccaneers", "Warriors", "Colonels" etc. are instantly recognizable to readers.</td>
+<td>Parents, students, booster clubs, local officials, and the handful of regional newspapers that cover high‑school sports.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Star Democrat Eastern Shore Sports Beat Book</p>
+            <p>Generated for journalism excellence on Maryland's Eastern Shore</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Toggle dropdown functionality
+        function toggleSection(sportId) {
+            const content = document.getElementById(sportId + '-content');
+            const icon = document.getElementById(sportId + '-icon');
+            
+            content.classList.toggle('active');
+            
+            if (content.classList.contains('active')) {
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Scroll to section
+        function scrollToSport(sportId) {
+            const section = document.getElementById(sportId + '-section');
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // Open the section if it's closed
+            const content = document.getElementById(sportId + '-content');
+            const icon = document.getElementById(sportId + '-icon');
+            
+            if (!content.classList.contains('active')) {
+                content.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+</body>
+</html>

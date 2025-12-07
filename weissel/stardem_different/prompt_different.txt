@@ -1,0 +1,18 @@
+create a school-by-school highlight sheet for the following Eastern Shore high schools:
+
+Cambridge, Colonel Richardson, Crisfield, Easton, JMB (James M. Bennett), Kent County, Kent Island, Mardela, North Caroline, North Dorchester, Parkside, Pocomoke, Queen Anne’s, Snow Hill, St. Michaels, Stephen Decatur, Washington, Wicomico.
+
+For each school, list ONLY accomplishments or appearances explicitly shown in the Record Book, such as:
+	•	State championships
+	•	State finalists / runners-up
+	•	Region champions
+	•	Notable state records
+	•	Individual state titles
+	•	Any placement that appears in the Record Book
+
+	Rules:
+	•	You MUST NOT add any accomplishments that are not in the Record Book.
+	•	You MUST NOT infer or guess information about a school.
+	•	If a school has no entries, say so exactly.
+	•	Do not use information from any other file unless I explicitly allow it.
+	•	Keep it clean, factual, and non-narrative.
