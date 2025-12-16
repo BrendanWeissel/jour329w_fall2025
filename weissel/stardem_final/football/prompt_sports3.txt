@@ -1,0 +1,55 @@
+Create a comprehensive beat guide for a reporter covering Eastern Shore of Maryland high school football for The Star-Democrat.
+
+Coverage Scope (Do Not Expand Beyond This List):
+Only include the following programs:
+	•	Colonel Richardson
+	•	Cambridge-South Dorchester
+	•	Snow Hill
+	•	Washington
+	•	Kent County
+	•	Stephen Decatur
+	•	Wicomico
+	•	Queen Anne’s County
+	•	Easton
+	•	Kent Island
+	•	Parkside
+	•	James M. Bennett
+	•	North Caroline
+
+If a school is not on this list, do not include it.
+
+Audience & Tone:
+Write in a business-casual tone as if an experienced Star-Democrat sports editor is walking a new reporter through the realities of the beat. Assume the reporter understands football but does not yet understand the Eastern Shore football ecosystem.
+
+Editorial Focus (Very Important):
+	•	Prioritize information relevant to The Star-Democrat’s coverage area and audience.
+	•	Emphasize program identity, coaching continuity, school culture, rivalries, and historical context.
+	•	De-emphasize individual players
+	•	When individuals are mentioned, focus on head coaches, long-tenured assistants, athletic directors, and key program builders rather than current rosters.
+
+Structure & Style Guidelines:
+	•	This should read as a narrative guide, not a listicle.
+	•	Avoid excessive bullet points; use bullets only for:
+	•	Practical checklists
+	•	Key contacts
+	•	Reporting workflows
+	•	“Less is more” — include only information that is accurate and defensible.
+
+Accuracy Requirements (Critical):
+	•	All facts must be verified against the provided source material.
+	•	Do not infer, speculate, or generalize beyond what the source supports.
+	•	If information is unclear or not supported by the source, omit it.
+	•	After completing the guide, re-read the entire document to confirm factual accuracy and internal consistency.
+
+School-by-School Breakdown:
+For each high school in the Star-Democrat coverage area, include a concise section addressing:
+	•	Historical Success (program reputation, notable eras, championships if verified)
+	•	Important Contacts (head coach, AD, or other program-level contacts when supported by the source)
+	•	Rivalries (list “None” if no clear rivalry is documented)
+    - Include information on their football play style from the source material, only make conclusions if you have information to back them up. List N/A if not enough info. 
+Source Use:
+	•	Rely exclusively on full story material from the provided source.
+	•	Do not supplement with outside knowledge unless explicitly instructed.
+
+Final Instruction:
+Once the beat book is complete, review it again in full to ensure it is accurate, focused on the Star-Democrat’s needs, and weighted toward long-term program understanding rather than short-term player profiles.
